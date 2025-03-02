@@ -4,9 +4,17 @@
   --color-navbar: #131B2F;
   --color-primary: #000614;
   --color-banner: #00D7E1;
-  --color-button-gradient: linear-gradient(114.66deg, #1870f6 62.27%, #32fefe 95.1%);
-  --color-footer-gradient: background: linear-gradient(114.66deg, #1870F6 62.27%, #32FEFE 95.1%);
+  --color-text: #8CA0B3;
+  --color-eagle-white: #E3E8F3;
+  --color-card: #191F2B;
+  --color-placeholder-text: #ABAEB4;
+  --color-footer-icons: #00E1E7;
+  --color-image-container: #364651;
+  --gradient: linear-gradient(114.66deg, #1870f6 62.27%, #32fefe 95.1%);
+  --color-button-gradient: var(--gradient);
+  --color-footer-gradient: background: var(--gradient);
   --font-poppins: var(--font-poppins);
+  --font-openSans: var(--font-openSans);
 }
 
 body {
@@ -22,4 +30,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.border-gradient {
+  border-radius: 50%;
+  border: 1px;
+  border-image: var(--gradient);
+  border-image-slice: 1;
 }
