@@ -29,26 +29,27 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full px-6 py-4 flex items-center justify-between bg-navbar">
-      <div className="flex items-center">
-        <Link href="/" className="mr-10">
-          <Image src={Logo} alt="Eagle AI Logo" width={120} height={32} />
-        </Link>
+    <div className="bg-navbar">
+      <nav className="container mx-auto px-6 py-4 flex items-center">
+        <div className="w-full flex items-center justify-between">
+          <Link href="/" className="mr-10">
+            <Image src={Logo} alt="Eagle AI Logo" width={120} height={32} />
+          </Link>
 
-        <div className="hidden md:flex space-x-6">
-          {navItems.map((item) => (
-            <NavItem
-              key={item.title}
-              title={item.title}
-              href={item.href}
-              active={item.active}
-            />
-          ))}
+          <div className="hidden md:flex gap-10">
+            {navItems.map((item) => (
+              <NavItem
+                key={item.title}
+                title={item.title}
+                href={item.href}
+                active={item.active}
+              />
+            ))}
+          </div>
+          <Button text="Launch App" href="/" className="ml-4" />
         </div>
-      </div>
-
-      <Button text="Launch App" href="/" className="ml-4" />
-    </nav>
+      </nav>
+    </div>
   );
 };
 
