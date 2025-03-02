@@ -6,12 +6,14 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = "",
   href = "",
+  type,
 }) => {
   return (
     <Link href={href}>
       <button
+        type={type}
         onClick={onClick}
-        className={`px-7 py-3 rounded-3xl font-medium transition-all btn-gradient text-white cursor-pointer ${className}`}
+        className={`px-7 py-3 rounded-3xl font-openSans transition-all btn-gradient text-white cursor-pointer ${className}`}
       >
         {text}
       </button>
