@@ -11,7 +11,7 @@ const FeatureListItem: React.FC<FeatureListItemProps> = ({ text }) => {
   );
 };
 
-const FeatureList: React.FC<FeatureListProps> = ({ items }) => {
+export const FeatureList: React.FC<FeatureListProps> = ({ items }) => {
   return (
     <ul className="text-gray-300 text-sm">
       {items.map((item, index) => (

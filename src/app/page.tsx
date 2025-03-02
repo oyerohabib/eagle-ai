@@ -1,6 +1,7 @@
-import AlertBanner from "./components/AlertBanner";
-import FeatureSection from "./components/FeatureSection";
-import HeroSection from "./components/HeroSection";
+import AlertBanner from "./components/Banner";
+import DividendsSection from "./components/Dividends";
+import FeatureSection from "./components/Feature";
+import HeroSection from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <AlertBanner />
       <HeroSection />
       <FeatureSection />
+      <DividendsSection />
     </div>
   );
 }
