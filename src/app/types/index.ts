@@ -11,12 +11,6 @@ export interface NavItemProps {
   active?: boolean;
 }
 
-export interface AlertBannerProps {
-  text: string;
-  linkText: string;
-  href: string;
-}
-
 export interface FeatureListItemProps {
   text: string;
 }
