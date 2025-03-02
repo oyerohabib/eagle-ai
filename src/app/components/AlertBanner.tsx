@@ -1,13 +1,15 @@
 import Link from "next/link";
-import { AlertBannerProps } from "../types";
 
-const AlertBanner: React.FC<AlertBannerProps> = ({ text, linkText, href }) => {
+const AlertBanner: React.FC = () => {
   return (
-    <div className="w-full bg-cyan-500 text-navy-900 py-2 px-4 text-center">
+    <div className="w-full bg-banner text-navy-900 py-2 px-4 text-center">
       <div className="container mx-auto">
-        <span className="font-medium">Eagle AI Labs:</span> {text}{" "}
-        <Link href={href} className="font-medium underline">
-          {linkText}
+        <span className="font-medium">Eagle AI Labs:</span>{" "}
+        {
+          "Partnership and Co-Ownership of a U.S. Regulated Crypto Hedgefund. This enables us to launch a new product, TradeDividends.  "
+        }{" "}
+        <Link href={"/learn-more"} className="font-medium underline">
+          Learn More
         </Link>
       </div>
     </div>
