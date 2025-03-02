@@ -12,11 +12,15 @@ const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
-      <AlertBanner />
-      <HeroSection />
+      <div className="relative bg-cover bg-no-repeat bg-[url(/bg-hero.png)]">
+        <AlertBanner />
+        <HeroSection />
+      </div>
       <FeatureSection />
-      <DividendsSection />
-      <RegistrationSection />
+      <div className="relative bg-cover bg-no-repeat bg-[url(/bg-dividend.png)]">
+        <DividendsSection />
+        <RegistrationSection />
+      </div>
       <ComingSection />
       <Footer />
     </div>

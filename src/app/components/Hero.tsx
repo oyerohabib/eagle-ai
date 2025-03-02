@@ -5,7 +5,7 @@ import MobileAppPreview from "@/app/assets/mobile-app-preview.png";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="text-white py-10 relative overflow-hidden">
+    <div className="text-white py-10 overflow-hidden">
       {/* Background wave effect - I willl be using SVG or CSS to achieve this */}
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-3/5 mb-12 lg:mb-0">
