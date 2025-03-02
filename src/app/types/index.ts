@@ -4,6 +4,7 @@ export interface ButtonProps {
   onClick?: () => void;
   className?: string;
   href?: string;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 export interface NavItemProps {
@@ -14,6 +15,7 @@ export interface NavItemProps {
 
 export interface FeatureListItemProps {
   text: string;
+  className?: string;
 }
 
 export interface FeatureListProps {
@@ -32,7 +34,8 @@ export interface RegisterFormData {
 }
 
 export interface BenefitCardProps {
-  icon: React.ReactNode;
+  image: string;
   title: string;
   items: string[];
+  alt: string;
 }
