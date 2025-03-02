@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
 import { NavItemProps } from "../types";
+import Logo from "@/app/assets/logo.svg";
 
 const NavItem: React.FC<NavItemProps> = ({ title, href, active }) => {
   return (
@@ -28,15 +29,10 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="w-full px-6 py-4 flex items-center justify-between bg-navy-900">
+    <nav className="w-full px-6 py-4 flex items-center justify-between bg-navbar">
       <div className="flex items-center">
         <Link href="/" className="mr-10">
-          <Image
-            src="/eagle-ai-logo.svg"
-            alt="Eagle AI"
-            width={120}
-            height={32}
-          />
+          <Image src={Logo} alt="Eagle AI Logo" width={120} height={32} />
         </Link>
 
         <div className="hidden md:flex space-x-6">
