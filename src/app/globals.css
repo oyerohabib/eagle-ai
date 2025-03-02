@@ -16,3 +16,10 @@ body {
 .btn-gradient {
   background: var(--color-button-gradient);
 }
+
+.text-gradient {
+  background: linear-gradient(132.39deg, #0207F7 0%, #14FFFF 68.66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
