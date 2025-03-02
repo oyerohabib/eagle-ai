@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --color-navbar: #131B2F;
+  --color-primary: #000614;
+  --color-banner: #00D7E1;
+  --color-button-gradient: linear-gradient(114.66deg, #1870f6 62.27%, #32fefe 95.1%);
+  --color-footer-gradient: background: linear-gradient(114.66deg, #1870F6 62.27%, #32FEFE 95.1%);
+}
+
+.btn-gradient {
+  background: var(--color-button-gradient);
+}
