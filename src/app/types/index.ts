@@ -5,6 +5,7 @@ export interface ButtonProps {
   className?: string;
   href?: string;
   type?: "button" | "submit" | "reset" | undefined;
+  disabled?: boolean;
 }
 
 export interface NavItemProps {
