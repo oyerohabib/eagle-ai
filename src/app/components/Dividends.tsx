@@ -14,10 +14,11 @@ const DividendsSection: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-start mb-16">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-            <h2 className="text-4xl font-bold mb-2">Trade Dividends</h2>
-            <h3 className="text-3xl font-light mb-6">Rewarding our comunity</h3>
+            <h2 className="text-5xl leading-[72px] mb-4 font-poppins">
+              Trade Dividends Rewarding our comunity
+            </h2>
 
-            <p className="text-gray-300 mb-4">
+            <p className="mb-4 font-poppins">
               This institutional partnership enables the launch of our
               innovative TradeDividends program:
             </p>
@@ -26,7 +27,7 @@ const DividendsSection: React.FC = () => {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-            <div className="bg-gradient-to-r from-blue-600 to-pink-600 p-1 rounded-lg">
+            <div className="border">
               <Image
                 src={DividendsIllustration}
                 alt="Trade Dividends Illustration"
