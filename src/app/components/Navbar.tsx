@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      <Button text="Launch App" primary className="ml-4" />
+      <Button text="Launch App" href="/" className="ml-4" />
     </nav>
   );
 };

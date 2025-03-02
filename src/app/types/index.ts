@@ -3,6 +3,7 @@ export interface ButtonProps {
   primary?: boolean;
   onClick?: () => void;
   className?: string;
+  href?: string;
 }
 
 export interface NavItemProps {

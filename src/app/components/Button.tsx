@@ -1,13 +1,21 @@
+import Link from "next/link";
 import { ButtonProps } from "../types";
 
-const Button: React.FC<ButtonProps> = ({ text, onClick, className = "" }) => {
+const Button: React.FC<ButtonProps> = ({
+  text,
+  onClick,
+  className = "",
+  href = "",
+}) => {
   return (
-    <button
-      onClick={onClick}
-      className={`px-6 py-2 rounded-full font-medium transition-all btn-gradient text-white ${className}`}
-    >
-      {text}
-    </button>
+    <Link href={href}>
+      <button
+        onClick={onClick}
+        className={`px-7 py-3 rounded-3xl font-medium transition-all btn-gradient text-white cursor-pointer ${className}`}
+      >
+        {text}
+      </button>
+    </Link>
   );
 };
 
