@@ -21,8 +21,12 @@ const Home: NextPage = () => {
         <DividendsSection />
         <RegistrationSection />
       </div>
-      <ComingSection />
-      <Footer />
+      <div className="relative bg-cover bg-no-repeat bg-[url(/bg-hero.png)] md:bg-none">
+        <ComingSection />
+      </div>
+      <div className="relative bg-cover bg-no-repeat bg-[url(/bg-hero.png)] md:bg-none">
+        <Footer />
+      </div>
     </div>
   );
 };
