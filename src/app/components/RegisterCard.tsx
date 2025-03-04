@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface CryptoWaitlistBannerProps {
   title?: string;
@@ -16,10 +18,20 @@ const CryptoWaitlistBanner: React.FC<CryptoWaitlistBannerProps> = ({
   src,
 }) => {
   return (
-    <div className="flex flex-col p-5 bg-card text-white rounded-lg border border-border w-full max-w-4xl">
+    <motion.div
+      className="flex flex-col p-5 bg-card text-white rounded-lg border border-border w-full max-w-4xl"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="flex flex-col md:flex-row gap-5 space-y-4 md:space-y-0 md:space-x-6">
         {/* Key image */}
-        <div className="w-full md:w-auto mx-auto flex md:block items-center justify-center">
+        <motion.div
+          className="w-full md:w-auto mx-auto flex md:block items-center justify-center"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="relative w-28 h-28 flex items-center justify-center rounded-full border border-button-gradient bg-image-container">
             <Image
               src={src}
@@ -29,10 +41,16 @@ const CryptoWaitlistBanner: React.FC<CryptoWaitlistBannerProps> = ({
               className="object-contain"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Text content */}
-        <div className="flex-1">
+        <motion.div
+          className="flex-1"
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+        >
           <h2 className="text-lg font-poppins leading-7 mb-2 text-center md:text-left">
             {title}
           </h2>
@@ -56,9 +74,9 @@ const CryptoWaitlistBanner: React.FC<CryptoWaitlistBannerProps> = ({
               {waitlistDeadline}
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

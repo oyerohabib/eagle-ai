@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.9",
+    "framer-motion": "^12.4.10",
     "next": "15.2.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
