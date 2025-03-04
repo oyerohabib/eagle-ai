@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FeatureListProps, FeatureListItemProps } from "../types";
-import Crypto from "@/app/assets/crypto-portal-image.png";
+import Crypto from "@/app/assets/crypto.png";
+import Crypto2 from "@/app/assets/crypto-2.png";
 
 const FeatureListItem: React.FC<FeatureListItemProps> = ({
   text,
@@ -38,22 +39,34 @@ const FeatureSection: React.FC = () => {
   ];
 
   return (
-    <div className="text-white py-20">
+    <div className="text-white lg:py-20 py-10">
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
-        <div className="w-full lg:w-2/5 mb-12 lg:mb-0">
+        <div className="lg:w-2/5 mb-12 lg:mb-0">
           <div className="border">
-            <Image
-              src={Crypto}
-              alt="Eagle AI Crypto Portal"
-              width={450}
-              height={400}
-              className="rounded-lg"
-            />
+            {/* Responsive Image */}
+            <div className="hidden md:block">
+              <Image
+                src={Crypto}
+                alt="Crypto Image"
+                width={450}
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
+            <div className="block md:hidden">
+              <Image
+                src={Crypto2}
+                alt="Crypto2 Image"
+                width={450}
+                height={400}
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
 
         <div className="w-full lg:w- pl-0 lg:pl-12">
-          <h2 className="text-5xl leading-[72px] mb-4 font-poppins">
+          <h2 className="lg:text-5xl text-4xl leading-12 lg:leading-[72px] mb-4 font-poppins">
             A new era in crypto investment
           </h2>
 
