@@ -65,12 +65,9 @@ const RegistrationSection: React.FC = () => {
   };
 
   return (
-    <section className="bg-navy-900 py-16 relative overflow-hidden">
-      {/* Background geometric shapes - implemented as absolute positioned divs */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-navy-800/30 transform -skew-x-12"></div>
-
+    <section className="lg:py-20 py-16">
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-5xl leading-[72px] mb-8 text-white font-poppins">
+        <h2 className="lg:text-5xl text-4xl leading-12 lg:leading-[72px] mb-4 text-white font-poppins">
           Limited Availability - Register now to join wait List
         </h2>
 
@@ -140,6 +137,7 @@ const RegistrationSection: React.FC = () => {
                   }
                   type="submit"
                   disabled={loading}
+                  className="w-full md:w-auto"
                 />
               </div>
             </form>
