@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
       {/* Background wave effect - I willl be using SVG or CSS to achieve this */}
       <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
         <div className="w-full lg:w-3/5 mb-12 lg:mb-0">
-          <h1 className="text-7xl leading-[108px] font-poppins mb-7 text-gradient">
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl xl:leading-[108px] leading-[120%] font-poppins mb-7 text-gradient">
             Pioneering the Future of Digital Asset Investment
           </h1>
 
